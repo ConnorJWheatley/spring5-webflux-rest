@@ -6,17 +6,19 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 /**
  * @Author: Connor Wheatley
- * @Date: 28/01/2022 15:43
+ * @Date: 28/01/2022 16:01
  */
 @Data
 @Document
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class Category {
+
+public class Vendor {
 
     @Id
     private String id;
 
-    private String description;
+    private String firstName;
+    private String lastName;
 }
